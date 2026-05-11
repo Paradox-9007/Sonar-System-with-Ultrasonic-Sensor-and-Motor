@@ -1,7 +1,6 @@
-# iot-sonar-integartion-workshop
 # Sonar System with Ultrasonic Sensor and Motor
 
-A simple radar/sonar visualization project using a **NodeMCU**, **HC-SR04P ultrasonic sensor**, and **SG90 servo motor**.  
+A simple sonar visualization project using a **NodeMCU**, **HC-SR04P ultrasonic sensor**, and **SG90 servo motor**.  
 The ultrasonic sensor rotates across a 180° area while sending distance data to a Python visualization interface.
 
 This project combines:
@@ -18,7 +17,7 @@ This project combines:
 
 - 180° scanning using SG90 servo motor
 - Real-time ultrasonic distance detection
-- Python radar-style visualization
+- Python visualization
 - Serial communication between NodeMCU and Python
 - Low-cost hardware implementation
 
@@ -41,6 +40,8 @@ This project combines:
 ---
 
 # Wiring Diagram
+<img width="536" height="352" alt="image" src="https://github.com/user-attachments/assets/6a5026ab-a9a1-41d0-b7dc-6d25ee0a9434" />
+
 
 ## Ultrasonic Sensor → NodeMCU
 
@@ -81,11 +82,17 @@ Wire the HC-SR04P sensor according to the table above.
 ---
 
 ## Step 3 — Build Sensor Mount
+<img width="1245" height="695" alt="image" src="https://github.com/user-attachments/assets/3417f484-8fb1-4d37-8237-bcd6542a50b7" />
 
 Using cardboard and paper clips:
 
 - Attach cardboard to the servo horn
 - Secure using paper clips
+
+<img width="1247" height="700" alt="image" src="https://github.com/user-attachments/assets/e39ae5d3-858a-4e39-aadf-22aeb4de5292" />
+<img width="1246" height="698" alt="image" src="https://github.com/user-attachments/assets/51c9fc2b-9941-4f69-aca2-afc2ca4f97bc" />
+
+
 - Mount the ultrasonic sensor on the front side
 - Ensure:
   - Servo wires point downward
@@ -103,7 +110,7 @@ Open the `.ino` file inside Arduino IDE.
 Example:
 
 ```text
-File → Open → sketch_name.ino
+File → Open → sketch_apr15a.ino
 ```
 
 Do not upload yet.
@@ -112,7 +119,7 @@ Do not upload yet.
 
 ## 2. Python Setup
 
-Open the `.py` file using:
+Open the `sonar_ui.py` file using:
 
 - VS Code
 - PyCharm
@@ -157,7 +164,7 @@ Before uploading:
 - Make sure the servo area is clear
 - Ensure all wiring connections are correct
 
-Upload the `.ino` file to the NodeMCU.
+Upload the `sketch_apr15a.ino` file to the NodeMCU.
 
 The servo motor should begin rotating and scanning a 180° area.
 
@@ -174,6 +181,7 @@ Otherwise the serial port may become busy.
 ---
 
 ## Step 3 — Run Python Visualization
+<img width="1477" height="1108" alt="img-2" src="https://github.com/user-attachments/assets/53a8fe4e-2547-44b3-9b3e-4f1a42d137ee" />
 
 Run the Python script:
 
@@ -181,7 +189,7 @@ Run the Python script:
 python sonar.py
 ```
 
-The radar visualization window should appear and begin displaying distance scans in real time.
+The sonar visualization window should appear and begin displaying distance scans in real time.
 
 ---
 
@@ -211,23 +219,6 @@ Keep:
 
 away from the rotating mechanism.
 
----
-
-# Project Structure
-
-Example repository structure:
-
-```text
-project/
-│
-├── sonar.ino
-├── sonar.py
-├── README.md
-└── assets/
-```
-
----
-
 # Technologies Used
 
 - Arduino / C++
@@ -240,6 +231,8 @@ project/
 ---
 
 # Learning Outcomes
+<img width="1477" height="1108" alt="img-2" src="https://github.com/user-attachments/assets/d4422618-2d17-45ea-a602-fb3106645a6e" />
+
 
 This project helped demonstrate:
 
