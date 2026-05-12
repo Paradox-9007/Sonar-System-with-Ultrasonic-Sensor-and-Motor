@@ -231,7 +231,6 @@ away from the rotating mechanism.
 ---
 
 # Learning Outcomes
-<img width="1477" height="1108" alt="img-2" src="https://github.com/user-attachments/assets/d4422618-2d17-45ea-a602-fb3106645a6e" />
 
 
 This project helped demonstrate:
